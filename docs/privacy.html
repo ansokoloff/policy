@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collector — Политика конфиденциальности / Privacy Policy</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #5a5a5a;
+    --accent: #2563eb;
+    --border: #e5e5e5;
+    --card: #f7f7f8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161a;
+      --fg: #eaeaea;
+      --muted: #a0a0a0;
+      --accent: #6ea8ff;
+      --border: #2a2d33;
+      --card: #1c1f24;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 4rem;
+  }
+  h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.2rem; border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; }
+  .updated { color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem; }
+  .lang-toggle { display: flex; gap: 0.5rem; margin-bottom: 2rem; }
+  .lang-toggle button {
+    background: var(--card);
+    color: var(--fg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.4rem 0.9rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  .lang-toggle button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  a { color: var(--accent); }
+  ul { padding-left: 1.3rem; }
+  li { margin-bottom: 0.4rem; }
+  .contact { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 1rem 1.2rem; margin-top: 2rem; }
+  [data-lang="en"] { display: none; }
+</style>
+</head>
+<body>
+
+<div class="lang-toggle">
+  <button id="btn-ru" class="active" onclick="showLang('ru')">Русский</button>
+  <button id="btn-en" onclick="showLang('en')">English</button>
+</div>
+
+<div data-lang="ru">
+  <h1>Collector — Политика конфиденциальности</h1>
+  <p class="updated">Обновлено: 23 августа 2026</p>
+
+  <p>Collector — Telegram-бот, который собирает посты из публичных Telegram-каналов
+  по вашему выбору, отбирает из них наиболее интересные с помощью AI и присылает
+  дайджест. Эта страница объясняет, какие данные бот хранит и зачем.</p>
+
+  <h2>Какие данные собираются</h2>
+  <ul>
+    <li>Telegram ID и username — чтобы узнавать вас между сессиями и присылать дайджест именно вам.</li>
+    <li>Выбранные вами каналы для отслеживания.</li>
+    <li>Текст ваших интересов (то, что вы присылаете через «🎯 Интересы») — используется для персонализации подборки.</li>
+    <li>Настройки: язык интерфейса, часовой пояс, время доставки дайджеста.</li>
+    <li>История покупок через Telegram Stars: какой план куплен, сумма в звёздах, идентификатор транзакции. Данные банковской карты боту не передаются и не хранятся — оплата целиком обрабатывается Telegram.</li>
+    <li>Использованные промокоды.</li>
+  </ul>
+
+  <h2>Зачем эти данные нужны</h2>
+  <p>Исключительно для работы самого бота: подбор и доставка дайджеста, учёт вашего
+  плана/лимитов, обработка покупок и промокодов. Данные не продаются и не
+  передаются третьим лицам в рекламных или иных целях.</p>
+
+  <h2>Кто ещё видит эти данные</h2>
+  <ul>
+    <li><strong>Telegram</strong> — как платформа, через которую работает бот и обрабатываются платежи Stars.</li>
+    <li><strong>AI-провайдер</strong> (Anthropic или OpenAI, в зависимости от текущей настройки бота) — текст ваших интересов и короткие фрагменты постов отправляются туда для отбора и ранжирования дайджеста. Полные тексты постов из каналов туда не передаются.</li>
+  </ul>
+  <p>Больше данные никому не передаются.</p>
+
+  <h2>Хранение и удаление</h2>
+  <p>Данные хранятся, пока вы пользуетесь ботом. Если ваш доступ (пробный период
+  или оплаченный план) заканчивается и не продлевается, бот присылает
+  напоминания на 1–3 день после окончания доступа, предупреждение об удалении —
+  на 5 день, а если доступ так и не восстановлен — автоматически удаляет
+  аккаунт и все связанные с ним данные (каналы, интересы, настройки) на 10 день.
+  Удаление отменяется в любой момент до 10 дня, если вы вводите промокод или
+  покупаете план. История покупок (какой план, сумма в звёздах, дата) хранится
+  отдельно и переживает удаление аккаунта — это финансовая запись для учёта, уже
+  не привязанная к вашим личным данным. Если хотите удалить свои данные раньше —
+  напишите разработчику (контакт ниже), запрос будет обработан вручную.</p>
+
+  <h2>Резервные копии</h2>
+  <p>База данных бота регулярно бэкапится для защиты от потери данных при сбое
+  сервера. Бэкапы хранятся ограниченное время и не передаются третьим лицам.</p>
+
+  <div class="contact">
+    Вопросы по этой политике — пишите разработчику напрямую в Telegram
+    (контакт указан в описании бота) или через issue в
+    <a href="https://github.com/">репозитории проекта на GitHub</a>.
+  </div>
+</div>
+
+<div data-lang="en">
+  <h1>Collector — Privacy Policy</h1>
+  <p class="updated">Last updated: August 23, 2026</p>
+
+  <p>Collector is a Telegram bot that pulls posts from public Telegram channels
+  you choose, uses AI to pick the most relevant ones, and sends you a digest.
+  This page explains what data the bot stores and why.</p>
+
+  <h2>What's collected</h2>
+  <ul>
+    <li>Your Telegram ID and username — to recognize you across sessions and deliver your digest.</li>
+    <li>The channels you've chosen to track.</li>
+    <li>Your interests text (whatever you send via «🎯 Interests») — used to personalize your digest.</li>
+    <li>Preferences: interface language, timezone, digest delivery time.</li>
+    <li>Purchase history via Telegram Stars: which plan, the Stars amount, the transaction id. No card details ever reach the bot — payment is handled entirely by Telegram.</li>
+    <li>Promo codes you've redeemed.</li>
+  </ul>
+
+  <h2>Why this data is collected</h2>
+  <p>Purely to run the bot: building and delivering your digest, tracking your
+  plan/limits, and processing purchases and promo codes. Data is never sold
+  or shared with third parties for advertising or any other purpose.</p>
+
+  <h2>Who else sees this data</h2>
+  <ul>
+    <li><strong>Telegram</strong> — the platform the bot runs on, and which processes Stars payments.</li>
+    <li><strong>The AI provider</strong> (Anthropic or OpenAI, depending on the bot's current configuration) — your interests text and short post snippets are sent there for ranking. Full post text from channels is not sent.</li>
+  </ul>
+  <p>Nobody else receives this data.</p>
+
+  <h2>Retention and deletion</h2>
+  <p>Data is kept for as long as you use the bot. If your access (trial or a
+  paid plan) ends and isn't renewed, the bot sends reminders on days 1–3 after
+  access ends, a deletion warning on day 5, and — if access still hasn't been
+  restored — automatically deletes the account and all associated data
+  (channels, interests, settings) on day 10. This is cancelled at any point
+  before day 10 if you redeem a promo code or buy a plan. Purchase history
+  (which plan, the Stars amount, the date) is kept separately and survives
+  account deletion — it's a financial record for accounting purposes, no
+  longer tied to your personal data. If you'd like your data deleted sooner,
+  contact the developer (see below) and the request will be handled by hand.</p>
+
+  <h2>Backups</h2>
+  <p>The bot's database is backed up regularly to protect against data loss
+  from a server failure. Backups are kept for a limited time and are never
+  shared with third parties.</p>
+
+  <div class="contact">
+    Questions about this policy — message the developer directly on Telegram
+    (contact in the bot's description) or open an issue on the
+    <a href="https://github.com/">project's GitHub repository</a>.
+  </div>
+</div>
+
+<script>
+  function showLang(lang) {
+    document.querySelectorAll('[data-lang]').forEach(el => {
+      el.style.display = el.getAttribute('data-lang') === lang ? 'block' : 'none';
+    });
+    document.getElementById('btn-ru').classList.toggle('active', lang === 'ru');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  }
+</script>
+
+</body>
+</html>
